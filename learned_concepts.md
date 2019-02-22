@@ -83,5 +83,5 @@ list comprehension
 read up to page 69 (4-12)
 
 
-
+comprehension example : squares = [value**2 for value in range(1,11)]
 
