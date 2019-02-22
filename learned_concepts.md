@@ -85,3 +85,9 @@ read up to page 69 (4-12)
 
 comprehension example : squares = [value**2 for value in range(1,11)]
 
+print on one line
+print("hello", "my", "man")
+--> hello my man
+for i in range(3):
+    print(i+1, end=" ")
+--> 1 2 3 
