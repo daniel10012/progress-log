@@ -91,3 +91,6 @@ print("hello", "my", "man")
 for i in range(3):
     print(i+1, end=" ")
 --> 1 2 3 
+
+# Saturday 1
+local variable 'name' referenced before assignment --> when u define in local scope a global scope variable
