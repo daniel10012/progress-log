@@ -94,3 +94,50 @@ for i in range(3):
 
 # Saturday 1
 local variable 'name' referenced before assignment --> when u define in local scope a global scope variable
+
+
+# Monday2
+add a remote repository : git remote add namebranch httpgiithub...
+remove : git remote remove testbranch
+
+things we dont wanna commit: add a .gitignore   generelly .idea and venv we dont wanna commit
+
+git workflow:
+git init , make changes, git add<filename> , git commit -m "msg" , git push <remote-name> master
+
+Tuples
+x = 1, 2   -> give a tuple
+
+def my_funct():
+ a =1
+ b = 2
+ return a, b
+ --> returns a tuple
+
+unpack the tuple ->  y,z = my_funct()
+                     print(y)   -> 1
+                     print (z) -> 2
+                     
+ aliasing -> new_list = my_list point the same space in memory, if i change one i change the other
+ if i wanna make a copy : new_list = my_list.copy
+ 
+ ctrl T rename or right click refactor rename
+ 
+ cache -> how that works? memory management for mutable and immutable object
+ 
+ membership to a list -> in    not in
+ 
+ do exercises all from chapter 5
+ 
+ git log -> check history
+ git checkout 512d9dcf3a811654 -> rolls back to that commit    and reset head
+ git checkout master returns to latest version
+ 
+ create a branch:
+ git checkout -b caden_db_feature
+ git branch -a
+ git branch -> tells which branch u at
+ 
+ git push salt_remote caden_db_feature  -> where we wanna push, what we wanna push
+ 
+ 
