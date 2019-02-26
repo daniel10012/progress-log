@@ -140,4 +140,24 @@ unpack the tuple ->  y,z = my_funct()
  
  git push salt_remote caden_db_feature  -> where we wanna push, what we wanna push
  
+ #Tuesday2
+ 
+ try
+ ..
+ except ValueError:
+ 
+ dcitonnaries:
+ each key must be unique, each key has to be an immutable
+ 
+ start a dictionnary:
+ dict_1= dict()
+ dict_2 = {}
+ not ordered
+ object dict keys iterable but no indexable
+ .item() method returns tuples
+ 
+ tuple unpacking:
+ t = (1,2)
+ a, b = t
+ 
  
