@@ -163,3 +163,5 @@ unpack the tuple ->  y,z = my_funct()
  json files and XML : data structures to communicate info on web
  
 while loops usefeul for inputs
+
+function.__call__()  equivalent to function()
