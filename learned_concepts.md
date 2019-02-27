@@ -165,3 +165,7 @@ unpack the tuple ->  y,z = my_funct()
 while loops usefeul for inputs
 
 function.__call__()  equivalent to function()
+
+a function returns None by default
+
+isintance(variable, type(ex string)  _> equivalent to type(variable) == type (ex string)
