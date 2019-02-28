@@ -178,4 +178,7 @@ a = "hello" -> we instantiate a string object
 
 anki flash cards -> good for memory
 
+module -> python file with functions , classes...
+import math -> from standard library
 
+when creating instance of a class you call __init__
