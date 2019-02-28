@@ -169,3 +169,13 @@ function.__call__()  equivalent to function()
 a function returns None by default
 
 isintance(variable, type(ex string)  _> equivalent to type(variable) == type (ex string)
+
+# Thursday week 2
+
+if merge conflict, change the file in question  , add and commit again
+
+a = "hello" -> we instantiate a string object
+
+anki flash cards -> good for memory
+
+
