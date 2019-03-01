@@ -182,3 +182,12 @@ module -> python file with functions , classes...
 import math -> from standard library
 
 when creating instance of a class you call __init__
+
+# Friday week 2
+
+Class attribute : attribut put a the top of the script before the functions (init...)
+Instance attribute: in ___init___
+
+aliasing -> for mutable object
+shallow copy -> import copy    b = copy.copy(a)  
+deep copy  -> use on mutable objects
