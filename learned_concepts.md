@@ -192,4 +192,8 @@ aliasing -> for mutable object
 shallow copy -> import copy    b = copy.copy(a)  
 deep copy  -> use on mutable objects
 
+#Weekend2
+
 https://www.digitalocean.com/community/tutorials/understanding-class-and-instance-variables-in-python-3?fbclid=IwAR2rSFQCT3MpkoQCxGiA4CUAsXTklyi2_GWBHJQTI1lgPWnj7xzKA9MiVJg
+
+if __name__ == "__main__":  -> 
