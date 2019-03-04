@@ -197,3 +197,16 @@ deep copy  -> use on mutable objects
 https://www.digitalocean.com/community/tutorials/understanding-class-and-instance-variables-in-python-3?fbclid=IwAR2rSFQCT3MpkoQCxGiA4CUAsXTklyi2_GWBHJQTI1lgPWnj7xzKA9MiVJg
 
 if __name__ == "__main__":  -> 
+
+# Monday week 3
+
+with open -> closes the file at the end of the block (just open leaves it open)
+fin when read
+fout when write
+
+check import logging  -> you can track what happens in the code
+
+successful situation : try -> else -> finally
+unsuccesful situation : try -> else ->finally
+
+
