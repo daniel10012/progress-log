@@ -212,4 +212,6 @@ unsuccesful situation : try -> else ->finally
 install a package:
 which python -> should tell you venv/bin/python
 if not in venv -> project interpreter and choose venv
+downloads from pypi.org
+project gutemberg _> lots of text
 
