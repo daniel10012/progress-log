@@ -215,3 +215,6 @@ if not in venv -> project interpreter and choose venv
 downloads from pypi.org
 project gutemberg _> lots of text
 
+read() returns one long string
+readlines() returns a list of lines
+
