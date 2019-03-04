@@ -209,4 +209,7 @@ check import logging  -> you can track what happens in the code
 successful situation : try -> else -> finally
 unsuccesful situation : try -> else ->finally
 
+install a package:
+which python -> should tell you venv/bin/python
+if not in venv -> project interpreter and choose venv
 
