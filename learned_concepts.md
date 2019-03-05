@@ -218,3 +218,30 @@ project gutemberg _> lots of text
 read() returns one long string
 readlines() returns a list of lines
 
+# Tuesday3
+w+ read and write
+raise Exception("custom exc bla bla"")
+encode = "utf8"  solves problems sometimes in open
+make root folder when prob with num in name
+
+tdd test driven development
+1.pseudocode 2.write test 3.write code
+
+.  test pass
+
+unittest
+
+in python console : python -m unittest
+
+import unittest
+import text
+create class TestNameoffile(unittest.TestCase)
+def test superlongname
+   self.assertSomething(text.bla)
+unittest testing framework
+
+name your test file  test_fun.py
+
+breakpoint()  -> debugg on server    on CLI pdb   commands n,p,q
+
+object = instance
