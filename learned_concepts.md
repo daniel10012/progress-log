@@ -245,3 +245,25 @@ name your test file  test_fun.py
 breakpoint()  -> debugg on server    on CLI pdb   commands n,p,q
 
 object = instance
+
+make directory as source root can solve import problems (ex:number in the name)
+
+function dir() -> give info 
+
+# wednesday 3
+
+virtual environment -> we create one for each project, has a py version, pip -> pip install 
+
+in command line
+python3 -m venv .env -> creates a python3 in the virtual environment  .env -> whichever name(the . makes it hidden)
+source .env/bin/activate _> we get inside the virtual environment  (to exit _> "deactivate" in CLI
+then we install the package in the venv:
+pip install InstagramAPI
+which python
+/Users/danielwegmann/Documents/CodingNomads/instagram/.env/bin/python  (shows python we using inside the project)
+pip freeze shows all packages installed
+
+so steps:
+ make venv , activate , pip install, make .py file, write code
+ (alt space does quick preview of pics in pycharm)
+ Thleruth/bot_arbitrage
