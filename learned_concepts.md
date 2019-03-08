@@ -304,5 +304,5 @@ gen = (x+1 for x in my_list)
 -> gen is an iterable, takes much less memory space than a comprehension
 returns an object
 
-list comprehension, generator , lambdas
+list comprehension, generator , lambdas 
 
