@@ -261,7 +261,7 @@ then we install the package in the venv:
 pip install InstagramAPI
 which python
 /Users/danielwegmann/Documents/CodingNomads/instagram/.env/bin/python  (shows python we using inside the project)
-pip freeze shows all packages installed
+pip freeze -l  (local) shows all packages installed
 
 so steps:
  make venv , activate , pip install, make .py file, write code
