@@ -267,3 +267,33 @@ so steps:
  make venv , activate , pip install, make .py file, write code
  (alt space does quick preview of pics in pycharm)
  Thleruth/bot_arbitrage
+ 
+# Friday3
+
+Class attribute:
+class Chair:
+    legs = 4
+instance attribute:
+def__init__(self, color):
+    self.color() = color
+ 
+method is called on an object " object.methos()  eq to  method(self)
+
+d = Dog()   _> calls Dog.__innit()__     instantiation
+
+create custom exception:
+
+def MyException(Exception):
+   pass
+   
+   a = 1
+   b = 1
+   
+   if a!=b:
+    raise MyException("not equal")    _> shows traceback and terminate code   (whereas catching continues the process)
+    
+  create virtual environment (from CLI):
+  python3 -m venv .env
+  source .env/bin/activate
+  
+  deactivate to get out of the venv
