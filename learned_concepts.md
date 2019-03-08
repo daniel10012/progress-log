@@ -296,4 +296,4 @@ def MyException(Exception):
   python3 -m venv .env
   source .env/bin/activate
   
-  deactivate to get out of the venv
+  "deactivate" to get out of the venv
