@@ -297,3 +297,12 @@ def MyException(Exception):
   source .env/bin/activate
   
   "deactivate" to get out of the venv
+  
+  
+ generator:
+gen = (x+1 for x in my_list)
+-> gen is an iterable, takes much less memory space than a comprehension
+returns an object
+
+list comprehension, generator , lambdas
+
