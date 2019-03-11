@@ -306,3 +306,8 @@ returns an object
 
 list comprehension, generator , lambdas 
 
+# Monday 4
+
+html
+body, P, a , div
+
