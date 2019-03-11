@@ -311,3 +311,4 @@ list comprehension, generator , lambdas
 html
 body, P, a , div
 
+eval(input) -> executes the input
