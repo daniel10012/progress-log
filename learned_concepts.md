@@ -312,3 +312,28 @@ html
 body, P, a , div
 
 eval(input) -> executes the input
+
+# Tuesday4
+
+<a href = "url"> link </a>    --> attirbute in opening tag
+create unordered listof 4 elements : ul > li * 4
+
+style -> can write css inside html
+<head>
+  <meta charse...
+  <link rel="stylesheet" href ="style.css">
+ </head>
+ 
+ brackets plugin > for  css syntx higlighting
+ 
+ classes:
+in css : .top-headin {
+             color :blue
+           }
+  <h1 class = "top-headin..."> blbla</h1>
+  example : css zen garden
+  viewport adapts to mobile
+  
+  gor github website display name your file index.html
+  setting, master branch
+ 
