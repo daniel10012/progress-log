@@ -338,3 +338,9 @@ in css : .top-headin {
   setting, master branch
  
 # Wednesay 4
+file:///  or file://localhost/  access your root folder
+URI URL
+ftp://  http://  are protocols  www.codingnomads.com domain name
+ping www.blabla.com in CLI shows IP
+traceroute in CLI shows trought which servers this goes
+ports : 80 main one
