@@ -344,3 +344,11 @@ ftp://  http://  are protocols  www.codingnomads.com domain name
 ping www.blabla.com in CLI shows IP
 traceroute in CLI shows trought which servers this goes
 ports : 80 main one
+
+# Thursday4:
+pip install requests-html
+history id
+fragment -> samepagelink    example ww.blabla#History
+xpath to find precise elements
+
+with requests_html : r.html.render() -> opens chromium to render the a return the JS
