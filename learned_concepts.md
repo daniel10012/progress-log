@@ -355,4 +355,4 @@ with requests_html : r.html.render() -> opens chromium to render the a return th
 
 on github to put the project online : call file index.html then click on settings and go down
 
-use Xpath to get a specific element in requests-html
+use Xpath to get a specific element in requests-html (right click inspect right click copy xpath)
