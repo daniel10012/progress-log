@@ -352,3 +352,5 @@ fragment -> samepagelink    example ww.blabla#History
 xpath to find precise elements
 
 with requests_html : r.html.render() -> opens chromium to render the a return the JS
+
+on github to put the project online : call file index.html then click on settings and go down
