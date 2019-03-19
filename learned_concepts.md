@@ -370,5 +370,9 @@ post : create content  put : change data
 
 keep secret tokens or passwords: 
 1. create secrets.py or config.py   -> put in .gitignore  (to do globally **/secrets but better to do for each project)
+from secrets import API_Key
 2.venvs : export TEST="test" -> we have access to that key  (in bin/activate)
  or dircetly in pycharm -> preferences build execution, python console, environment variables
+ import os
+ os.environ.get('TEST'))
+ -> we get the test variable
