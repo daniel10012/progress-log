@@ -360,3 +360,10 @@ use Xpath to get a specific element in requests-html (right click inspect right 
 # Friday4:
 html requests -> use Session() object to keep pesisting info after login in
 get request gets an html response object
+
+# Monday5:
+master branch -> working code
+branch dev then pull request
+commit to different branche : git checkout -b your-new-branch   ,   git add  ,  git commit   (-b = branch)
+regular website : html   api : jason or xml response
+post : create content  put : change data
