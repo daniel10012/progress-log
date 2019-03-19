@@ -378,3 +378,5 @@ from secrets import API_Key
  -> we get the test variable
  
  slack: api 
+
+crontab -e   crontab -l
