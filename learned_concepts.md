@@ -367,3 +367,7 @@ branch dev then pull request
 commit to different branche : git checkout -b your-new-branch   ,   git add  ,  git commit   (-b = branch)
 regular website : html   api : jason or xml response
 post : create content  put : change data
+
+keep secret tokens or passwords: 
+1. create secrets.py or config.py   -> put in .gitignore  (to do globally **/secrets but better to do for each project)
+2.venvs : export TEST="test" -> we have access to that key  (in bin/activate)
