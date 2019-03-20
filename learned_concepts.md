@@ -380,3 +380,32 @@ from secrets import API_Key
  slack: api 
 
 crontab -e   crontab -l
+
+# Tuesday 5
+
+relationnal database : relate from table to table, never duplicate data. primary key identify each record
+link tables with foreign keys -> point to primary key in other table
+use lookup  table (ex:studen courses)
+many to many -> lookup table
+many to one -> add a column in the many
+one to one -> all in same table
+interact with sql -> client or statement
+
+query statement : SELECT * FROM students;
+returns a result set : table with elements required
+when insert : return success or failure
+
+can add sorting:
+SELECT * FROM students WHERE age > 20;
+
+INSERT INTO Students (name, age) VALUES ("daniel", 32)
+(we'll make the id autoincrement)
+
+JOIN gives temporary joining of 2 tables
+example : 
+SELECT * FROM Student as s
+JOIN Student-Course sc   (thats the lookup table)
+ON s.id = sc.student_id
+JOIN courses as c
+ON sc.course_id = c.id;
+(WHERE s.id = 1;)
