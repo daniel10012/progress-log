@@ -423,5 +423,5 @@ psql -u postgress
 can type SQL queries straight in there
 
 pgAdmin4
-create server
-
+create server right click create
+schemas tables
