@@ -409,3 +409,19 @@ ON s.id = sc.student_id
 JOIN courses as c
 ON sc.course_id = c.id;
 (WHERE s.id = 1;)
+
+postgress:
+
+in the CLI
+$psql (connects to postgress server)
+psql -u postgress 
+\? -> commands
+\l -> list of databases
+\c -> connect to database
+\q -> quit
+\dt -> shows all tables
+can type SQL queries straight in there
+
+pgAdmin4
+create server
+
