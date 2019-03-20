@@ -421,7 +421,22 @@ psql -u postgress
 \q -> quit
 \dt -> shows all tables
 can type SQL queries straight in there
+CLI pg_restore -> import downloaded database into postgres
+Import a database:
+pg_restore -U danielwegmann -d dvdrentals /Users/danielwegmann/Downloads/dvdrental 
+schemas, tables
+tools query tool
 
 pgAdmin4
 create server right click create
 schemas tables
+
+on postgress start server (opens cli psql)
+open pgadmin
+create database with connection localhost
+
+make something available anywhere on computer : add the path to .bash_profile 
+
+
+
+
