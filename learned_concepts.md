@@ -442,3 +442,5 @@ make something available anywhere on computer : add the path to .bash_profile
 
 from root folder : vim .gitignore to add global gitignore
 
+when we create database -> do it within pgadmin
+then intereact on python
