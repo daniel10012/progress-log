@@ -438,5 +438,7 @@ create database with connection localhost
 make something available anywhere on computer : add the path to .bash_profile 
 
 
+# Wednesday 5
 
+from root folder : vim .gitignore to add global gitignore
 
