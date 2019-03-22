@@ -448,3 +448,8 @@ echo = true -> shows sql statements
 
 pip install SQLAlchemy  
 pip install psycopg2       
+
+# Friday 5
+ORM is a translator from python to relationnal database    object relation mapper
+connection string -  dataURI (unified ressource identifier)
+db.select[(actors.columns.name)]
