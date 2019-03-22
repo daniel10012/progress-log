@@ -464,3 +464,4 @@ put : you have to put the end pint (ex:actor/201)
 post: endpoint is actor/   and will create new id automatically
 
 IFTTT connects
+psql : create database nameofdatabase
