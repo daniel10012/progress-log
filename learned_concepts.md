@@ -459,3 +459,6 @@ sandman2ctl connectionstring
 example : sandman2ctl 'postgres+psycopg2://danielwegmann:Sunrise2016$@localhost:5432/dvdrentals'
 
 microservices : little apps that can be on diff servers (exemple authentification, posts) that are Rest APIs
+
+put : you have to put the end pint (ex:actor/201)
+post: endpoint is actor/   and will create new id automatically
