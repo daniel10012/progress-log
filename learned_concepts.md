@@ -457,3 +457,5 @@ db.select[(actors.columns.name)]
 sandman2 package
 sandman2ctl connectionstring
 example : sandman2ctl 'postgres+psycopg2://danielwegmann:Sunrise2016$@localhost:5432/dvdrentals'
+
+microservices : little apps that can be on diff servers (exemple authentification, posts) that are Rest APIs
