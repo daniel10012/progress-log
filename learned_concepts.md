@@ -493,6 +493,12 @@ in models.py -> put db models as class (singular in django)
 class inherits from models.Model
 add our new app logs in setting.py in our management app (dont forget "," at the end can mess up django)
 python manage.py makemigrations (creates initial.py in the migrations file of our app)
-python manage.py sqlmigrate logs 0001   (show what SQL does)      
+python manage.py sqlmigrate logs 0001   (show what SQL does with migrate)      
+python manage.py migrate (executes the init)
+go to admin.py to register the topics model:
+"from .models import Topic
+
+# Register your models here.
+admin.site.register(Topic)"
 
 
