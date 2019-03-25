@@ -486,19 +486,38 @@ python manage.py migrate
 add sqlite database to gitignore
 python manage.py runserver
 python manage.py createsuperuser (to create an admin)
+create a README.md file
 git add .    
 git commit -m "inital setup"
 python manage.py startapp appname  (creates app file on top of management app we have)
 in models.py -> put db models as class (singular in django)
 class inherits from models.Model
+"class Topic(models.Model):                      #id is made automatically
+    text = models.CharField(max_length=200)
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.text"
 add our new app logs in setting.py in our management app (dont forget "," at the end can mess up django)
 python manage.py makemigrations (creates initial.py in the migrations file of our app)
 python manage.py sqlmigrate logs 0001   (show what SQL does with migrate)      
 python manage.py migrate (executes the init)
 go to admin.py to register the topics model:
 "from .models import Topic
-
-# Register your models here.
 admin.site.register(Topic)"
+python manage.py startserver
+
+add the other class in models.py
+class Entry(models.Model):
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE) # show that it needs sth on delete
+    text = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name_plural = 'entries'    #django pluralises so we put this to get entries instead of entrys
+
+    def __str__(self):
+        return f"{self.text[:50]}..."   #display a clipped version
+
 
 
