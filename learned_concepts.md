@@ -473,4 +473,4 @@ django templating language
 sandman2
 front end framework -> executed on client side
 back end -> happens on the server
-
+SALT stores a hash
