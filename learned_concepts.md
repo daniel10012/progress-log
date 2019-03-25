@@ -470,3 +470,4 @@ psql : create database nameofdatabase
 
 MVC (MTV in django)
 django templating language
+sandman2
