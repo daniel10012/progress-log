@@ -465,3 +465,8 @@ post: endpoint is actor/   and will create new id automatically
 
 IFTTT connects
 psql : create database nameofdatabase
+
+# Monday 6
+
+MVC (MTV in django)
+django templating language
