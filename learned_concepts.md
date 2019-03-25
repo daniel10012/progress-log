@@ -520,4 +520,6 @@ class Entry(models.Model):
         return f"{self.text[:50]}..."   #display a clipped version
 
 
-
+python manage.py makemigrations  
+python manage.py migrate  
+put admin.site.register(Entry) in admin.py
