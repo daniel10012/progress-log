@@ -474,3 +474,16 @@ sandman2
 front end framework -> executed on client side
 back end -> happens on the server
 SALT stores a hash
+
+create a django project
+create file with venv
+pip install django
+pip freeze > requirements
+django-admin startproject name [directory]
+.gitignore(venv idea secrets) and secrets.py
+gitinit
+python manage.py migrate
+add sqlite database to gitignore
+python manage.py runserver
+python manage.py createsuperuser (to create an admin)
+
