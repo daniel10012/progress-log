@@ -523,3 +523,6 @@ class Entry(models.Model):
 python manage.py makemigrations  
 python manage.py migrate  
 put admin.site.register(Entry) in admin.py
+
+
+good sqlalchemy tutorial : https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_core_using_conjunctions.html
