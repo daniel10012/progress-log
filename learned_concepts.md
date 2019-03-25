@@ -505,7 +505,7 @@ python manage.py migrate (executes the init)
 go to admin.py to register the topics model:
 "from .models import Topic
 admin.site.register(Topic)"
-python manage.py startserver
+python manage.py runserver
 
 add the other class in models.py
 class Entry(models.Model):
