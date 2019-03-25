@@ -486,4 +486,13 @@ python manage.py migrate
 add sqlite database to gitignore
 python manage.py runserver
 python manage.py createsuperuser (to create an admin)
+git add .    
+git commit -m "inital setup"
+python manage.py startapp appname  (creates app file on top of management app we have)
+in models.py -> put db models as class (singular in django)
+class inherits from models.Model
+add our new app logs in setting.py in our management app (dont forget "," at the end can mess up django)
+python manage.py makemigrations (creates initial.py in the migrations file of our app)
+python manage.py sqlmigrate logs 0001   (show what SQL does)      
+
 
