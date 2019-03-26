@@ -541,3 +541,41 @@ example:
 >>> e = Entry.objects.get(id=1)
 >>> e
 <Entry: relationnal database : relate from table to table,...>
+
+in our app :
+gonna work in templates
+view.py for code logic
+urls.py for routes
+
+urls.py in management app but we create a new url.py in our own app
+in management url:
+'''from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('logs/', include('logs.urls')),
+]'''
+
+in our app url:
+'''from django.urls import path
+from logs import views
+
+urlpatterns = [
+    path('', views.index),
+]'''
+
+then go in our views.py and put:
+'''from django.shortcuts import render
+from django.htpp import HttpResponse
+
+'Create your views here and put the function:
+def index(request):
+    return render(request,"base.html")
+    #return HttpResponse("<h1>hello django!<\h1>")'''
+ create a templates file in the app
+create a base.html 
+ go into settings of management app and add DIRS': [os.path.join(BASE_DIR, 'logs/templates')], in TEMPLATES
+ 
+ how it works again:
+ 1) learning-logs -> urls
