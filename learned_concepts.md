@@ -526,3 +526,9 @@ put admin.site.register(Entry) in admin.py
 
 
 good sqlalchemy tutorial : https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_core_using_conjunctions.html
+
+# Tuesday 6
+sqlite is a file postgress run server
+
+scrum master talk
+agile:
