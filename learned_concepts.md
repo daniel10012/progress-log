@@ -583,3 +583,11 @@ create a base.html
  3)redirects to views  
  4) executes function 
  5) sends to template via render
+
+
+in our app, to be able to pass info of database from views to template we use a context variable in views: (in views.py)
+'''def list(request):
+    context = {}
+    t = Topic.objects.all()
+    context["topics"] = t
+    return render(request, "list.html",context)'''
