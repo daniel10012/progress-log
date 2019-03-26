@@ -480,7 +480,7 @@ create file with venv
 pip install django
 pip freeze > requirements
 django-admin startproject name [directory]
-.gitignore(venv idea secrets) and secrets.py
+make a .gitignore(venv idea secrets) and secrets.py
 gitinit
 python manage.py migrate
 add sqlite database to gitignore
@@ -498,7 +498,7 @@ class inherits from models.Model
 
     def __str__(self):
         return self.text"
-add our new app logs in setting.py in our management app (dont forget "," at the end can mess up django)
+add our new app logs in setting.py in our management app (dont forget "," at the end can mess up django) ex: "testapp",
 python manage.py makemigrations (creates initial.py in the migrations file of our app)
 python manage.py sqlmigrate logs 0001   (show what SQL does with migrate)      
 python manage.py migrate (executes the init)
