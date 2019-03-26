@@ -531,4 +531,13 @@ good sqlalchemy tutorial : https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_
 sqlite is a file postgress run server
 
 scrum master talk
-agile:
+
+
+django continued:
+for queries in the database we can start a django shell
+>>>python manage.py shell    in the cli
+>>>from logs.models import Topic, Entry
+example:
+>>> e = Entry.objects.get(id=1)
+>>> e
+<Entry: relationnal database : relate from table to table,...>
