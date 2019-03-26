@@ -591,3 +591,10 @@ in our app, to be able to pass info of database from views to template we use a 
     t = Topic.objects.all()
     context["topics"] = t
     return render(request, "list.html",context)'''
+
+we can put logic in html files:
+    <ol>
+        {% for topic in topics %}
+        <li>{{topic}}</li>
+        {% endfor %}
+    </ol>
