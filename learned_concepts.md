@@ -572,10 +572,14 @@ from django.htpp import HttpResponse
 'Create your views here and put the function:
 def index(request):
     return render(request,"base.html")
-    #return HttpResponse("<h1>hello django!<\h1>")'''
+    ->return HttpResponse("<h1>hello django!<\h1>")'''
  create a templates file in the app
 create a base.html 
  go into settings of management app and add DIRS': [os.path.join(BASE_DIR, 'logs/templates')], in TEMPLATES
  
  how it works again:
- 1) learning-logs -> urls
+ 1) learning-logs -> urls of management app
+ 2) redirects to url of the app
+ 3)redirects to views  
+ 4) executes function 
+ 5) sends to template via render
