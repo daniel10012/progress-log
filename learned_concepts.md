@@ -598,3 +598,22 @@ we can put logic in html files:
         <li>{{topic}}</li>
         {% endfor %}
     </ol>
+
+
+we have been following Web Applications project3 from the book(up to p453 pdf)  finish chapter 18
+
+we can define live templates (tab tab)
+
+base.thml helps define a base with :
+    {% block content %}
+
+    {% endblock %}
+
+and we call in index with :
+{% extends "base.html" %}
+
+    {% block content %}
+        <h2>whatsupppp</h2>
+    {% endblock content %}
+    
+  
