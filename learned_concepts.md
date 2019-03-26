@@ -616,4 +616,7 @@ and we call in index with :
         <h2>whatsupppp</h2>
     {% endblock content %}
     
-  
+can use loops in html templates:
+{% for i in blabla %}
+  do this
+{% endfor %}
