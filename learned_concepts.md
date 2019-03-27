@@ -620,3 +620,12 @@ can use loops in html templates:
 {% for i in blabla %}
   do this
 {% endfor %}
+
+# Wednesday 6
+
+forms: in html stuff that we fill up
+create froms.py on app level
+
+for namesspaces:
+app_name = "logs" 
+path('new_topic/', views.new_topic, name="new_topic")
