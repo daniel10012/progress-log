@@ -632,3 +632,6 @@ path('new_topic/', views.new_topic, name="new_topic")
 
 # Java crash course
 comiled language, use java virtual machine to run the code
+
+# Friday6
+Deployment in Heroku
