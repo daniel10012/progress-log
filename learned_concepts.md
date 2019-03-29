@@ -635,3 +635,4 @@ comiled language, use java virtual machine to run the code
 
 # Friday6
 Deployment in Heroku
+export SECRET_KEY='blabla'
