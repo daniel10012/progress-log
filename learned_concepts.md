@@ -644,3 +644,7 @@ operators
 + blabla
 
 tools ; can change time frame
+
+#decorators
+@login_required    (python thing)
+function that takes a funct as a an argument and return a function object
