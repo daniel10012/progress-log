@@ -648,3 +648,95 @@ tools ; can change time frame
 #decorators
 @login_required    (python thing)
 function that takes a funct as a an argument and return a function object
+
+# AWS
+
+STEP 1. clone - run locally - push to github
+
+1. create folder
+2. create a virtual environement: $ python3 -m venv .env
+3. activate .env: $ source .env/bin/activate
+4. clone from github: $ git clone https://github.com/martin-martin/django-twitter-clone.git
+5. $ cd django-twitter-clone
+6. $ pip install -r requirements.txt
+7. $ python djitter/manage.py migrate
+8. $ cd djitter
+9. $ python manage.py makemigrations djeet
+10. $ python manage.py makemigrations djeeterprofile
+11. migrate the DB: $ python manage.py migrate
+12. check if it’s running in localhost: $ python manage.py runserver
+13. create github repository, and push to github.
+$ git add /commit/ add remote <your remote name> “github repository link ”
+$ git push ming master
+
+STEP 2.
+1. register an account with AWS.
+2. login to AWS management console
+3. Services -> EC2 -> Instances -> Launch Instance -> Ubuntu -> next until Configure Security Group: set Source=My IP
+Add one more type: Custom TCP , port range = 8000, anywhere
+Add one more type: HTTP, port range = 80, anywhere
+750hour a month for one instance for free for only one year
+port: 8080 development 8000; 22 secured shell
+4. click: Launch
+5. create new key pair
+6. download the key pem.txt
+
+wait for 15 mins
+
+7. click on View Instances on the right down corner
+8. change the name and click on Connect
+9. In Terminal:
+$ deactivate
+$ cd
+$ ls -al
+10. if there is no .ssh folder create  one, then move pem file inside
+$ cd .ssh
+$ mv ../Downloads/ming_bali.pem .
+11. change security owner read only: $ chmod 400 ming_bali.pem
+12. when you are in .ssh folder, connect to server, based on DNS(domain name server) or server info given by AWS
+$ ssh -i “ming_bali.pem” ubuntu@ec2-34-213-211-97.us-west-2.compute.amazonaws.com
+13. when asked, type: yes
+14. now we are at ubuntu@ip-172-31-24-209:~$
+15. security group -> inbound -> edit inbound rules -> click on My IP: it will change to a new IP
+16. install python, nginx sql curl etc here:
+$ sudo apt-get update
+$ sudo apt-get install python3-pip
+$ sudo apt-get install python3-dev
+$ sudo apt-get install nginx
+$ sudo apt-get install curl
+$ sudo apt-get install libmysqlclient-dev
+$ sudo apt-get install python3-venv
+(sudo = superuser do, which you can only install in superuser level)
+
+STEP 3.
+create directory in server: ubuntu@ip-172-31-24-209:~$ mkdir twitter_proj
+$ cd twitter_proj/
+$ git clone https://github.com/mingyyy/django-twitter-clone
+$ cd django-twitter-clone/
+create virtual environment: $ python3 -m venv env
+activate virtual environment: $ source env/bin/activate
+clone from github: $ git clone https://github.com/martin-martin/django-twitter-clone.git
+$ cd django-twitter-clone
+recursive install: $ pip install -r requirements.txt
+$ pip install gunicorn
+Go to setting.py file, change:
+1. DEBUG=False
+2. add one more item in ALLOWED_HOSTS, copy from public IP into this list.
+make migrations for app djeet: $ python manage.py makemigrations djeet
+make migrations for app djeeterprofile: $ python manage.py makemigrations djeeterprofile
+migrate the DB: $ python manage.py migrate
+runserver here command: python manage.py runserver 0.0.0.0:8000
+goto brower find the public ip and add 8000:
+http://34.213.211.97:8000
+Now it’s running....
+
+Then, we close the session: ctrl+c, web is not working after this.
+Next we test gunicorn to run our server when we are on the session: $ gunicorn --bind 0.0.0.0:8000 djitter.wsgi
+Again, the web app is running...
+mingyyy/django-twitter-clone
+Language
+Python
+Last updated
+2 hours ago
+mingyyy/django-twitter-cloneToday at 9:57 AMAdded by GitHub
+Note for today, so far… still long way to go according to Caden
