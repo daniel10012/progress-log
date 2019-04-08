@@ -763,3 +763,28 @@ vim ~/.bash_profile  put the path
 :${PATH} append existing path at the end, have to do it to keep all commands
 when problem zsh, do source ~/.bash_profile   
 which psql  tells you which one
+
+
+pip install psycopg2
+open postgres, pgadmin
+in setting.py replace sqlite by postgress
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
+crete RDS on AWS
+public accessible yes
+Enable deletion protection off
+connect to RDS trough pgadmin
+create new database in pgadmin
+create new server , add connection your RDS endpoint
+change settings.py to add the host
+runserver !
