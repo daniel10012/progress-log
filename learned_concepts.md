@@ -744,3 +744,22 @@ Last updated
 2 hours ago
 mingyyy/django-twitter-cloneToday at 9:57 AMAdded by GitHub
 Note for today, so far… still long way to go according to Caden
+
+# Monday 8
+
+RDS database is a server just for a database
+lsof -i tcp
+
+1. connect local project to local postgress
+2.create new RDS
+3. connect local proj to remote RDS
+4. EC2 connect to RDS
+
+problems with path:
+which psql
+ls/applications/postgress.app/content/verison/latest/bin
+
+vim ~/.bash_profile  put the path
+:${PATH} append existing path at the end, have to do it to keep all commands
+when problem zsh, do source ~/.bash_profile   
+which psql  tells you which one
