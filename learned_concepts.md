@@ -701,6 +701,7 @@ $ mv ../Downloads/ming_bali.pem .
 $ ssh -i “ming_bali.pem” ubuntu@ec2-34-213-211-97.us-west-2.compute.amazonaws.com
 13. when asked, type: yes
 14. now we are at ubuntu@ip-172-31-24-209:~$
+https://platform.codingnomads.co/learn/mod/page/view.php?id=2069
 15. security group -> inbound -> edit inbound rules -> click on My IP: it will change to a new IP
 16. install python, nginx sql curl etc here:
 $ sudo apt-get update
