@@ -789,3 +789,115 @@ create new database in pgadmin
 create new server , add connection your RDS endpoint
 change settings.py to add the host
 runserver !
+
+
+Connect RDS to EC2
+
+    1  sudo apt-get update
+    2  sudo apt-get install python3-pip
+    3  sudo apt-get install python3-dev
+    4  sudo apt-get install nginx
+    5  sudo apt-get install curl
+    6  sudo apt-get install libmysqlclient-dev
+    7  sudo apt-get install python3-venv
+    8  mkdir twitter_proj
+    9  cd twitter_proj
+   10  git clone https://github.com/daniel10012/django-twitter-clone.git
+   11  ls -al
+   12  cd django-twitter-clone/
+   13  python3 -m venv env
+   14  source env/bin/activate
+   15  pip install -r requirements.txt
+   16  pip install gunicorn
+   17  ls -al
+   18  cd djitter/
+   19  ls -al
+   20  cd djitter/
+   21  ls -al
+   22  vim settings.py 
+   23  python manage.py makemigrations
+   24  cd ..
+   25  python manage.py makemigrations
+   26  python manage.py makemigrations djeet
+   27  python manage.py makemigrations djeeterprofile
+   28  python manage.py migrate
+   29  python manage.py createsuperuser
+   30  python manage.py runserver 0.0.0.0:8000
+   31  gunicorn --bind 0.0.0.0:8000 djitter.wsgi
+   32  deactivate 
+   33  sudo nano /etc/systemd/system/gunicorn.socket
+   34  sudo vim /etc/systemd/system/gunicorn.socket
+   35  sudo vim /etc/systemd/system/gunicorn.service
+   36  cd ..
+   37  cd django-twitter-clone/
+   38  cd djitter/
+   39  cd ..
+   40  pwd
+   41  sudo vim /etc/systemd/system/gunicorn.service
+   42  cd env
+   43  cd bin
+   44  ls -al
+   45  pwd
+   46  sudo vim /etc/systemd/system/gunicorn.service
+   47  sudo systemctl start gunicorn.socket
+   48  sudo systemctl enable gunicorn.socket
+   49  sudo systemctl status gunicorn.socket
+   50  file /run/gunicorn.sock
+   51  sudo systemctl status gunicorn
+   52  curl --unix-socket /run/gunicorn.sock localhost
+   53  sudo systemctl status gunicorn
+   54  curl --unix-socket /run/gunicorn.sock localhost
+   55  sudo journalctl -u gunicorn
+   56  sudo vim /etc/systemd/system/gunicorn.service
+   57  sudo systemctl daemon-reload
+   58  sudo systemctl restart gunicorn
+   59  sudo systemctl status gunicorn
+   60  curl --unix-socket /run/gunicorn.sock localhost
+   61  sudo vim /etc/nginx/sites-available/myproject
+   62  cd /etc/nginx/sites-available/myproject
+   63  cd /etc/nginx/sites-available/
+   64  ls -al
+   65  rm myproject 
+   66  sudo rm myproject 
+   67  ls -al
+   68  sudo vim /etc/nginx/sites-available/myproject
+   69  ls -al
+   70  sudo vim /etc/nginx/sites-available/djitter
+   71  cd
+   72  ls -al
+   73  cd twitter_proj/
+   74  cd django-twitter-clone/
+   75  cd djitter/
+   76  pwd
+   77  sudo vim /etc/nginx/sites-available/djitter
+   78  sudo ln -s /etc/nginx/sites-available/djitter /etc/nginx/sites-enabled
+   79  sudo nginx -t
+   80  sudo systemctl restart nginx
+   81  cat djitter/settings.py 
+   82  cd djitter/
+   83  vim settings.py 
+   84  sudo systemctl restart gunicorn
+   85  sudo systemctl daemon-reload
+   86  cd ..
+   87  ls -al
+   88  source env/bin/activate
+   89  python djitter/manage.py makemigrations
+   90  pip install psycopg2
+   91  pip install django psycopg2
+   92  sudo apt-get postgresql postgresql-contrib
+   93  deactivate
+   94  sudo apt-get postgresql postgresql-contrib
+   95  sudo install postgresql postgresql-contrib
+   96  sudo apt install postgresql postgresql-contrib
+   97  source env/bin/activate
+   98  pip install psycopg2
+   99  sudo apt install libpq-dev
+  100  pip install psycopg2
+  101  sudo systemctl daemon-reload
+  102  sudo systemctl restart gunicorn
+  103  python djitter/manage.py makemigrations
+  104  python djitter/manage.py migrate
+  105  cd djitter/
+  106  cat settings.py 
+  107  sudo service postgresql status
+  108  history
