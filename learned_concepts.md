@@ -901,3 +901,18 @@ Connect RDS to EC2
   106  cat settings.py 
   107  sudo service postgresql status
   108  history
+
+creating RDS:
+
+pwd, settings, not protected
+allow private IP of EC2 instance
+local IP for connecting trough pg admin
+settings.py:
+engine postgres
+name dbname
+user
+pwd
+host: ip adress rds
+port: 5432
+and then migrate
+
